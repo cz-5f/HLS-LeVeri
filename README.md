@@ -18,24 +18,11 @@ The framework combines three ideas:
 - **Coverage-driven refinement**: symbolic execution and coverage profiling guide the generation of corner-case stimuli until the verification target reaches sufficient structural coverage.
 - **Knowledge-augmented LLM agent**: a heterogeneous HLS verification knowledge graph provides reusable structural priors, while the agent orchestrates LLM generation, KLEE, gcov, gcc, and Vitis HLS in a closed loop.
 
-Experimental results on **107 HLS benchmark pairs** show that the proposed framework achieves **98.26% average coverage** and **95.33% dynamic consistency**, outperforming AST-based, retrieval-augmented, and iterative agent baselines.
-
 ## Paper Figures
 
 ### Shift-Left Verification Motivation
 
-<table>
-<tr>
-<td align="center">
-<img src="assets/shift-left-overeview.png" width="800">
-</td>
-</tr>
-<tr>
-<td align="center">
-<b>Figure 1.</b> Shift-Left Verification Motivation
-</td>
-</tr>
-</table>
+![Shift-Left Verification Motivation](assets/shift-left-overeview.png)
 
 ### Knowledge-Augmented Verification Agent
 
@@ -50,7 +37,7 @@ Experimental results on **107 HLS benchmark pairs** show that the proposed frame
 This repository currently releases an initial dataset preview:
 
 - [`summary_hlstrans_tcl_h.json`](summary_hlstrans_tcl_h.json)
-- Contains **107 preliminary HLSTrans-based verification targets**
+- Contains **107 independent verification targets filtered and enhanced from hlstrans**
 - Each entry summarizes paired C / HLS-C benchmark information for shift-left HLS verification research
 
 The paper further constructs a larger verified 4-tuple dataset:
@@ -61,9 +48,7 @@ The paper further constructs a larger verified 4-tuple dataset:
 
 where `P_c` is the golden C/C++ program, `P_h` is the HLS-oriented implementation, `TB_c` is the golden C testbench, and `TB_h` is the HLS-C testbench.
 
-## Dataset Structure Comparison
-
-Table 1(a) compares HLS-VeriAgent with representative HLS datasets and benchmarks. Unlike prior resources that provide only partial verification artifacts, our dataset includes the complete C / HLS-C / C-Testbench / HLS-C-Testbench structure.
+Unlike prior resources that provide only partial verification artifacts, our dataset includes the complete C / HLS-C / C-Testbench / HLS-C-Testbench structure.
 
 | Dataset   | C | HLS-C | C-TB | HLS-C-TB |
 |------------|---|--------|------|----------|
@@ -73,18 +58,6 @@ Table 1(a) compares HLS-VeriAgent with representative HLS datasets and benchmark
 | HLSPilot   | ✓ | ✓ | ✗ | ✗ |
 | **Ours**   | ✓ | ✓ | ✓ | ✓ |
 
-## Repository Layout
-
-```text
-.
-|-- README.md
-|-- summary_hlstrans_tcl_h.json
-`-- assets/
-    |-- shift-left-overview.png
-    |-- agent-framework.png
-    |-- kg-framework.png
-    `-- table1a.png
-```
 
 ## Citation
 
