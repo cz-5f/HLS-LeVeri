@@ -8,7 +8,7 @@ Zhihan Xiao, Zhe Zhao, Luke Ztz Hu, and Songping Mai
 
 Shenzhen International Graduate School, Tsinghua University, Shenzhen, China
 
-## Overview
+## Overeview
 
 High-Level Synthesis (HLS) translates C/C++ programs into hardware implementations, but functional consistency between golden C specifications and HLS-oriented C implementations is still hard to verify before synthesis. HLS-LeVeri targets this shift-left verification stage: it automatically constructs high-coverage and semantically aligned testbench pairs for golden C and HLS-C programs, then checks whether observed mismatches come from the target design or from the generated testbench itself.
 
