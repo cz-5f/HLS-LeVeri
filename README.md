@@ -24,7 +24,18 @@ Experimental results on **107 HLS benchmark pairs** show that the proposed frame
 
 ### Shift-Left Verification Motivation
 
-![Shift-left verification overview](assets/shift-left-overview.png)
+<table>
+<tr>
+<td align="center">
+<img src="assets/shift-left-overeview.png" width="800">
+</td>
+</tr>
+<tr>
+<td align="center">
+<b>Figure 1.</b> Shift-Left Verification Motivation
+</td>
+</tr>
+</table>
 
 ### Knowledge-Augmented Verification Agent
 
