@@ -71,7 +71,3 @@ The arXiv version has just been submitted. Citation information will be updated 
   note   = {arXiv preprint}
 }
 ```
-
-## Contact
-
-For questions, please contact Zhihan Xiao at `xiaozh24@mails.tsinghua.edu.cn`.
