@@ -1,4 +1,4 @@
-# HLS-VeriAgent
+# HLS-LeVeri
 
 Official repository for **Shift-Left High-Level Synthesis Verification via Knowledge-Augmented LLM Agent**.
 
@@ -10,7 +10,7 @@ Shenzhen International Graduate School, Tsinghua University, Shenzhen, China
 
 ## Overview
 
-High-Level Synthesis (HLS) translates C/C++ programs into hardware implementations, but functional consistency between golden C specifications and HLS-oriented C implementations is still hard to verify before synthesis. HLS-VeriAgent targets this shift-left verification stage: it automatically constructs high-coverage and semantically aligned testbench pairs for golden C and HLS-C programs, then checks whether observed mismatches come from the target design or from the generated testbench itself.
+High-Level Synthesis (HLS) translates C/C++ programs into hardware implementations, but functional consistency between golden C specifications and HLS-oriented C implementations is still hard to verify before synthesis. HLS-LeVeri targets this shift-left verification stage: it automatically constructs high-coverage and semantically aligned testbench pairs for golden C and HLS-C programs, then checks whether observed mismatches come from the target design or from the generated testbench itself.
 
 The framework combines three ideas:
 
@@ -52,9 +52,15 @@ where `P_c` is the golden C/C++ program, `P_h` is the HLS-oriented implementatio
 
 ## Dataset Structure Comparison
 
-Table 1(a) in the paper compares HLS-VeriAgent with representative HLS datasets and benchmarks. Unlike prior resources that provide only partial verification artifacts, our dataset includes the complete C / HLS-C / C-testbench / HLS-C-testbench structure.
+Table 1(a) compares HLS-VeriAgent with representative HLS datasets and benchmarks. Unlike prior resources that provide only partial verification artifacts, our dataset includes the complete C / HLS-C / C-Testbench / HLS-C-Testbench structure.
 
-![Table 1(a): structural comparison with existing datasets](assets/table1a.png)
+| Dataset   | C | HLS-C | C-TB | HLS-C-TB |
+|------------|---|--------|------|----------|
+| HLSDataset | ✗ | ✓ | ✗ | ✓ |
+| HLS-Eval   | ✗ | ✓ | ✗ | ✓ |
+| HLSTrans   | ✓ | ✓ | ✗ | ✗ |
+| HLSPilot   | ✓ | ✓ | ✗ | ✗ |
+| **Ours**   | ✓ | ✓ | ✓ | ✓ |
 
 ## Repository Layout
 
