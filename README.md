@@ -1,12 +1,13 @@
 # HLS-LeVeri
 
 Official repository for **Shift-Left High-Level Synthesis Verification via Knowledge-Augmented LLM Agent**.
-
+<!-- 
 ## Authors
 
 Zhihan Xiao, Zhe Zhao, Luke Ztz Hu, and Songping Mai
 
 Shenzhen International Graduate School, Tsinghua University, Shenzhen, China
+-->
 
 ## Overview
 
@@ -34,9 +35,9 @@ The framework combines three ideas:
 
 ## Open Dataset Preview
 
-This repository currently releases an initial dataset preview:
+This repository currently releases an initial benchmark preview:
 
-- [`summary_hlstrans_tcl_h.json`](summary_hlstrans_tcl_h.json)
+- [`HLS_LeVeri_benchmark.json`](HLS_LeVeri_benchmark.json)
 - Contains **107 independent verification targets filtered and enhanced from hlstrans**
 - Each entry summarizes paired C / HLS-C benchmark information for shift-left HLS verification research
 
@@ -58,7 +59,7 @@ Unlike prior resources that provide only partial verification artifacts, our dat
 | HLSPilot   | ✓ | ✓ | ✗ | ✗ |
 | **Ours**   | ✓ | ✓ | ✓ | ✓ |
 
-
+<!--
 ## Citation
 
 The arXiv version has just been submitted. Citation information will be updated after the arXiv identifier is available.
@@ -71,3 +72,4 @@ The arXiv version has just been submitted. Citation information will be updated 
   note   = {arXiv preprint}
 }
 ```
+-->
