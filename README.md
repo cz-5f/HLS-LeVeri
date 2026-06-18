@@ -59,17 +59,17 @@ Unlike prior resources that provide only partial verification artifacts, our dat
 | HLSPilot   | ✓ | ✓ | ✗ | ✗ |
 | **Ours**   | ✓ | ✓ | ✓ | ✓ |
 
-<!--
+
 ## Citation
 
-The arXiv version has just been submitted. Citation information will be updated after the arXiv identifier is available.
-
 ```bibtex
-@misc{xiao2026hlsveriagent,
-  title  = {Shift-Left High-Level Synthesis Verification via Knowledge-Augmented LLM Agent},
-  author = {Xiao, Zhihan and Zhao, Zhe and Hu, Luke Ztz and Mai, Songping},
-  year   = {2026},
-  note   = {arXiv preprint}
+@misc{xiao2026shiftlefthighlevelsynthesisverification,
+      title={Shift-Left High-Level Synthesis Verification via Knowledge-Augmented LLM Agent}, 
+      author={Zhihan Xiao and Hongbing Lang and Zhe Zhao and Luke Ztz Hu and Songping Mai},
+      year={2026},
+      eprint={2606.17128},
+      archivePrefix={arXiv},
+      primaryClass={cs.AR},
+      url={https://arxiv.org/abs/2606.17128}, 
 }
 ```
--->
