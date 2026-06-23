@@ -8,6 +8,7 @@ Zhihan Xiao, Zhe Zhao, Luke Ztz Hu, and Songping Mai
 
 Shenzhen International Graduate School, Tsinghua University, Shenzhen, China
 -->
+📄 **Paper:** [Shift-Left High-Level Synthesis Verification via Knowledge-Augmented LLM Agent](https://arxiv.org/abs/2606.17128)
 
 ## Overview
 
